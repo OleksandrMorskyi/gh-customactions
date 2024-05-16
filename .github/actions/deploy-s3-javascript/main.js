@@ -13,7 +13,7 @@ function run() {
     
     exec.exec(`aws s3 sync ${distFolder} ${s3Uri} --region ${bucketRegion}`);
 
-    core.notice ('Hello from my custom JavaScript Actio!');
+    core.notice ('Hello from my custom JavaScript Action!');
 }
 
 run();
