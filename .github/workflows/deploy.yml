@@ -68,8 +68,9 @@ jobs:
       - name: Get AWS permissions
         uses:  aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::992382846826:role/GitHubDemo2
           aws-region: us-east-2
+          audience: sts.amazonaws.com.
+          role-to-assume: arn:aws:iam::992382846826:role/GitHubDemo2
       - name: Deploy site
         id: deploy 
         uses: ./.github/actions/deploy-s3-docker
