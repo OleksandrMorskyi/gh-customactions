@@ -70,7 +70,7 @@ jobs:
         with:
           aws-region: us-east-2
           audience: sts.amazonaws.com.
-          role-to-assume: arn:aws:iam::992382846826:role/GitHubDemo2
+          role-to-assume: arn:aws:iam::992382846826:role/GitHubDemo3
       - name: Deploy site
         id: deploy 
         uses: ./.github/actions/deploy-s3-docker
