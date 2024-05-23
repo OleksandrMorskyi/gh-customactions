@@ -72,7 +72,7 @@ jobs:
           aws-region: us-east-2
       - name: Deploy site
         id: deploy 
-        uses: ./.github/actions/deploy-s3-javascript
+        uses: ./.github/actions/deploy-s3-docker
         with:
           bucket: gha-security-hosting-demo13
           dist-folder: ./dist
